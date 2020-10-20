@@ -1,6 +1,109 @@
 // test
 
+* {
+  min-height: 100%;
+}
+
 body {
   height: 100%;
-  background-color: lightcoral;
+  background: rgb(251, 117, 172);
+  background: linear-gradient(90deg, rgba(226, 148, 178, 0.849) 4%, rgba(245, 241, 241, 1) 4%);
+  line-height: 2;
+}
+
+.wrapper {
+  max-width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.light-shade-color {
+  color: #f7f3f0;
+}
+
+.icons {
+  display: hidden;
+}
+
+header {
+  width: 100%;
+}
+.header {
+  // display: block;
+  width: 100%;
+  background-image: url(../img/banner-background.jpg);
+  height: auto;
+
+  .main-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: rgba(226, 148, 178, 0.849);
+
+    .header-info {
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px 0;
+
+      .name {
+        font-size: 26px;
+        font-family: serif;
+        font-weight: 900;
+      }
+
+      .slogan {
+        font-size: 18px;
+        font-family: sans-serif;
+      }
+    }
+
+    .banner {
+      width: 100%;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 60px 0;
+
+      .title {
+        width: 100%;
+        font-size: 30px;
+        font-family: serif;
+        font-weight: 900;
+      }
+
+      .info {
+        width: 100%;
+        font-size: 18px;
+        font-family: sans-serif;
+      }
+    }
+
+    .logo {
+      justify-content: flex-start;
+    }
+
+    .menu {
+      display: none;
+    }
+  }
+
+  button {
+    background: none;
+    border: none;
+    svg {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  //  HEADER//
+  .wrapper {
+    padding: 0 20px;
+  }
 }

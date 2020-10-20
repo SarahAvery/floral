@@ -1,6 +1,98 @@
+* {
+  min-height: 100%;
+}
+
 body {
   height: 100%;
-  background-color: lightcoral;
+  background: #fb75ac;
+  background: linear-gradient(90deg, rgba(226, 148, 178, 0.849) 4%, #f5f1f1 4%);
+  line-height: 2;
+}
+
+.wrapper {
+  max-width: 1400px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.light-shade-color {
+  color: #f7f3f0;
+}
+
+.icons {
+  display: hidden;
+}
+
+header {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  background-image: url(/banner-background.7df10ede.jpg);
+  height: auto;
+}
+.header .main-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(226, 148, 178, 0.849);
+}
+.header .main-header .header-info {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+.header .main-header .header-info .name {
+  font-size: 26px;
+  font-family: serif;
+  font-weight: 900;
+}
+.header .main-header .header-info .slogan {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.header .main-header .banner {
+  width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 60px 0;
+}
+.header .main-header .banner .title {
+  width: 100%;
+  font-size: 30px;
+  font-family: serif;
+  font-weight: 900;
+}
+.header .main-header .banner .info {
+  width: 100%;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+.header .main-header .logo {
+  justify-content: flex-start;
+}
+.header .main-header .menu {
+  display: none;
+}
+.header button {
+  background: none;
+  border: none;
+}
+.header button svg {
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and (max-width: 1450px) {
+  .wrapper {
+    padding: 0 20px;
+  }
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
