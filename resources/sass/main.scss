@@ -34,6 +34,7 @@ header {
   width: 100%;
   background-image: url(../img/banner-background.jpg);
   height: auto;
+  background-position: center;
 
   .main-header {
     display: flex;
@@ -103,7 +104,7 @@ header {
 
 @media only screen and (max-width: 1450px) {
   //  HEADER//
-  .wrapper {
+  .main-header {
     padding: 0 20px;
   }
 }
