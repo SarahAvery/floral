@@ -5,7 +5,7 @@
 body {
   height: 100%;
   background: #fb75ac;
-  background: linear-gradient(90deg, rgba(226, 148, 178, 0.849) 4%, #f5f1f1 4%);
+  background: linear-gradient(90deg, rgba(225, 147, 177, 0.849) 4%, #f5f1f1 4%);
   line-height: 2;
 }
 
@@ -29,7 +29,11 @@ body {
 }
 
 .icons {
-  display: hidden;
+  display: none;
+}
+
+.nav-desktop {
+  display: none;
 }
 
 header {
@@ -85,11 +89,11 @@ header {
 .header .main-header .menu {
   display: none;
 }
-.header .button {
+.header .menu-button {
   background: none;
   border: none;
 }
-.header .button svg {
+.header .menu-button svg {
   height: 30px;
   width: 30px;
 }
@@ -97,6 +101,47 @@ header {
 @media only screen and (max-width: 1450px) {
   .main-header {
     padding: 0 20px;
+  }
+}
+@media only screen and (min-width: 801px) {
+  .menu-button {
+    display: none;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #f5f1f1;
+    padding: 0 20px;
+    height: 30px;
+  }
+  .icons svg {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    fill: rgba(226, 148, 178, 0.849);
+  }
+
+  .nav-desktop {
+    display: block;
+    max-width: 60%;
+  }
+  .nav-desktop nav {
+    display: block;
+    font-size: 18px;
+    color: #f7f3f0;
+  }
+  .nav-desktop nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-desktop nav ul a {
+    text-decoration: none;
+    list-style: none;
+    padding: 0 5px;
+    margin: 0 2px;
   }
 }
 
