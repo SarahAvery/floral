@@ -143,6 +143,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .dark-title {
+    font-size: 24px;
+  }
+}
+
 @media only screen and (min-width: 801px) {
   //  HEADER//
 
@@ -251,13 +257,13 @@ section {
     .sm-flower {
       height: 40px;
       text-align: center;
-      svg {
+      img {
         height: 30px;
-        fill: rgba(226, 148, 178, 0.849);
       }
     }
   }
 
-  .services {
-  }
+  // .services {
+  //   background-image: ;
+  // }
 }

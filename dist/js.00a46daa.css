@@ -122,6 +122,11 @@ section {
     font-size: 42px;
   }
 }
+@media only screen and (max-width: 360px) {
+  .dark-title {
+    font-size: 24px;
+  }
+}
 @media only screen and (min-width: 801px) {
   .menu-button {
     display: none;
@@ -170,9 +175,8 @@ section .sect-info .sm-flower {
   height: 40px;
   text-align: center;
 }
-section .sect-info .sm-flower svg {
+section .sect-info .sm-flower img {
   height: 30px;
-  fill: rgba(226, 148, 178, 0.849);
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
