@@ -1,14 +1,11 @@
 // Global//
 
-* {
-  min-height: 100%;
-}
-
 body {
   height: 100%;
-  background: rgb(251, 117, 172);
-  background: linear-gradient(90deg, rgba(225, 147, 177, 0.849) 4%, rgba(245, 241, 241, 1) 4%);
-  line-height: 2;
+  // background: rgb(251, 117, 172);
+  background-color: rgba(245, 241, 241, 1);
+  // background: linear-gradient(90deg, rgba(225, 147, 177, 0.849) 4%, rgba(245, 241, 241, 1) 4%);
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -28,6 +25,24 @@ body {
 
 .sans {
   font-family: "Raleway", sans-serif;
+}
+
+.dark-title {
+  font-family: "Vidaloka", serif;
+  color: #3f3f3f;
+  font-size: 6.7vw;
+}
+
+.dark-para {
+  font-family: "Raleway", sans-serif;
+  color: #3f3f3f;
+  font-size: 18px;
+}
+
+.title-head,
+.para {
+  text-align: center;
+  width: 100%;
 }
 
 // End of Global //
@@ -116,8 +131,15 @@ header {
 
 @media only screen and (max-width: 1450px) {
   //  HEADER//
-  .main-header {
+  .main-header,
+  section {
     padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .dark-title {
+    font-size: 42px;
   }
 }
 
@@ -132,7 +154,7 @@ header {
     justify-content: flex-end;
     width: 100%;
     background-color: rgba(245, 241, 241, 1);
-    padding: 0 20px;
+    padding: 5px 20px;
     height: 30px;
 
     svg {
@@ -216,3 +238,26 @@ header {
 //     }
 //   }
 // }
+
+// BODY//
+
+section {
+  .about-us {
+    // flex-wrap: block;
+  }
+  .sect-info {
+    padding: 30px 0;
+
+    .sm-flower {
+      height: 40px;
+      text-align: center;
+      svg {
+        height: 30px;
+        fill: rgba(226, 148, 178, 0.849);
+      }
+    }
+  }
+
+  .services {
+  }
+}
