@@ -85,11 +85,11 @@ header {
 .header .main-header .menu {
   display: none;
 }
-.header button {
+.header .button {
   background: none;
   border: none;
 }
-.header button svg {
+.header .button svg {
   height: 30px;
   width: 30px;
 }
