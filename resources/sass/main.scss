@@ -9,7 +9,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -45,6 +45,11 @@ body {
   width: 100%;
 }
 
+.main-header,
+section {
+  padding: 105px 20px;
+}
+
 // End of Global //
 // Specific Starts//
 
@@ -73,6 +78,7 @@ header {
     width: 100%;
     flex-wrap: wrap;
     background-color: rgba(226, 148, 178, 0.849);
+    padding-top: 30px;
 
     .header-info {
       display: flex;
@@ -129,11 +135,19 @@ header {
   }
 }
 
-@media only screen and (max-width: 1450px) {
+// @media only screen and (max-width: 1450px) {
+//   //  HEADER//
+//   .main-header,
+//   section {
+//     padding: 105px 20px;
+//   }
+// }
+
+@media only screen and (max-width: 960px) {
   //  HEADER//
   .main-header,
   section {
-    padding: 0 20px;
+    padding: 30px 20px;
   }
 }
 
@@ -248,11 +262,9 @@ header {
 // BODY//
 
 section {
-  .about-us {
-    // flex-wrap: block;
-  }
   .sect-info {
     padding: 30px 0;
+    width: 100%;
 
     .sm-flower {
       height: 40px;
@@ -262,8 +274,41 @@ section {
       }
     }
   }
+}
 
-  // .services {
-  //   background-image: ;
-  // }
+.services {
+  background-image: url(../img/services-cropped.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  // background-attachment: fixed;
+  width: 100%;
+  height: auto;
+
+  .service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 20px 0;
+
+    .service-card {
+      max-width: 350px;
+      display: block;
+      margin: 20px;
+      background-color: rgba(128, 127, 133, 0.747);
+      height: 100%;
+      width: 100%;
+      padding: 24px;
+    }
+
+    .title {
+      font-size: 24px;
+    }
+
+    p {
+      padding: 15px 0;
+    }
+  }
 }

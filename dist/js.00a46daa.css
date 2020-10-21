@@ -5,7 +5,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1200px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -41,6 +41,11 @@ body {
   width: 100%;
 }
 
+.main-header,
+section {
+  padding: 105px 20px;
+}
+
 .icons {
   display: none;
 }
@@ -65,6 +70,7 @@ header {
   width: 100%;
   flex-wrap: wrap;
   background-color: rgba(226, 148, 178, 0.849);
+  padding-top: 30px;
 }
 .header .main-header .header-info {
   display: flex;
@@ -111,10 +117,10 @@ header {
   width: 30px;
 }
 
-@media only screen and (max-width: 1450px) {
+@media only screen and (max-width: 960px) {
   .main-header,
 section {
-    padding: 0 20px;
+    padding: 30px 20px;
   }
 }
 @media only screen and (min-width: 630px) {
@@ -170,6 +176,7 @@ section {
 }
 section .sect-info {
   padding: 30px 0;
+  width: 100%;
 }
 section .sect-info .sm-flower {
   height: 40px;
@@ -177,6 +184,38 @@ section .sect-info .sm-flower {
 }
 section .sect-info .sm-flower img {
   height: 30px;
+}
+
+.services {
+  background-image: url(/services-cropped.1f77568d.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 20px 0;
+}
+.services .service-cards .service-card {
+  max-width: 350px;
+  display: block;
+  margin: 20px;
+  background-color: rgba(128, 127, 133, 0.747);
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+}
+.services .service-cards .title {
+  font-size: 24px;
+}
+.services .service-cards p {
+  padding: 15px 0;
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
