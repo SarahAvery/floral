@@ -33,6 +33,7 @@ body {
 // End of Global //
 // Specific Starts//
 
+//HEADER
 .icons {
   display: hidden;
 }
@@ -115,3 +116,60 @@ header {
     padding: 0 20px;
   }
 }
+
+// @media only screen and (min-width: 801px) {
+//   //  HEADER//
+//   .icons {
+//     display: block;
+//   }
+// }
+
+//TABLET//
+
+// @media only screen and (max-width: 800px) {
+//   //HEADER//
+
+//     .menu,
+//     #menu {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: flex;
+//     flex-wrap: wrap;
+//     width: 100%;
+//     background-color: #3d3c3c;
+//     z-index: 10;
+//     margin: 0 auto;
+//     justify-content: center;
+
+//     .header-info {
+//       padding: 0;
+//     }
+
+//     .nav-mobile {
+//       display: block;
+//       width: 100%;
+//       text-align: center;
+//       font-size: 18px;
+
+//       a {
+//         text-decoration: none;
+//         list-style: none;
+//       }
+//     }
+
+//     .icons-mobile {
+//       display: flex;
+//       justify-content: center;
+//       width: 100%;
+//       height: 80px;
+
+//       svg {
+//         height: 30px;
+//         width: 30px;
+//         margin: 0 10px;
+//         fill: rgba(226, 148, 178, 0.849);
+//       }
+//     }
+//   }
+// }
