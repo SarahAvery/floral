@@ -1,4 +1,4 @@
-// test
+// Global//
 
 * {
   min-height: 100%;
@@ -21,6 +21,17 @@ body {
 .light-shade-color {
   color: #f7f3f0;
 }
+
+.serif {
+  font-family: "Vidaloka", serif;
+}
+
+.sans {
+  font-family: "Raleway", sans-serif;
+}
+
+// End of Global //
+// Specific Starts//
 
 .icons {
   display: hidden;
@@ -53,13 +64,11 @@ header {
 
       .name {
         font-size: 26px;
-        font-family: serif;
         font-weight: 900;
       }
 
       .slogan {
         font-size: 18px;
-        font-family: sans-serif;
       }
     }
 
@@ -72,14 +81,12 @@ header {
       .title {
         width: 100%;
         font-size: 30px;
-        font-family: serif;
         font-weight: 900;
       }
 
       .info {
         width: 100%;
         font-size: 18px;
-        font-family: sans-serif;
       }
     }
 

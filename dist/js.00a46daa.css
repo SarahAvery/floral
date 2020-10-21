@@ -20,6 +20,14 @@ body {
   color: #f7f3f0;
 }
 
+.serif {
+  font-family: "Vidaloka", serif;
+}
+
+.sans {
+  font-family: "Raleway", sans-serif;
+}
+
 .icons {
   display: hidden;
 }
@@ -51,12 +59,10 @@ header {
 }
 .header .main-header .header-info .name {
   font-size: 26px;
-  font-family: serif;
   font-weight: 900;
 }
 .header .main-header .header-info .slogan {
   font-size: 18px;
-  font-family: sans-serif;
 }
 .header .main-header .banner {
   width: 100%;
@@ -67,13 +73,11 @@ header {
 .header .main-header .banner .title {
   width: 100%;
   font-size: 30px;
-  font-family: serif;
   font-weight: 900;
 }
 .header .main-header .banner .info {
   width: 100%;
   font-size: 18px;
-  font-family: sans-serif;
 }
 .header .main-header .logo {
   justify-content: flex-start;
