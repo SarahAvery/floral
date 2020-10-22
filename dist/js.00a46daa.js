@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\banner-background.jpg":[["banner-background.7df10ede.jpg","resources/img/banner-background.jpg"],"resources/img/banner-background.jpg"],"./..\\img\\services-cropped.jpg":[["services-cropped.1f77568d.jpg","resources/img/services-cropped.jpg"],"resources/img/services-cropped.jpg"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"./..\\img\\banner-background.jpg":[["banner-background.7df10ede.jpg","resources/img/banner-background.jpg"],"resources/img/banner-background.jpg"],"./..\\img\\services-cropped.jpg":[["services-cropped.1f77568d.jpg","resources/img/services-cropped.jpg"],"resources/img/services-cropped.jpg"],"./..\\img\\services-decoration.jpg":[["services-decoration.e7111aa2.jpg","resources/img/services-decoration.jpg"],"resources/img/services-decoration.jpg"],"./..\\img\\services-floral-design.jpg":[["services-floral-design.22b42daf.jpg","resources/img/services-floral-design.jpg"],"resources/img/services-floral-design.jpg"],"./..\\img\\service-events.jpg":[["service-events.d55d134a.jpg","resources/img/service-events.jpg"],"resources/img/service-events.jpg"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../resources/sass/main");
@@ -223,7 +223,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50572" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56244" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

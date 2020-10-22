@@ -175,7 +175,6 @@ section {
   }
 }
 section .sect-info {
-  padding: 30px 0;
   width: 100%;
 }
 section .sect-info .sm-flower {
@@ -200,21 +199,43 @@ section .sect-info .sm-flower img {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin: 20px 0;
 }
-.services .service-cards .service-card {
+.services .service-cards .service-card-1 {
   max-width: 350px;
+  height: 300px;
   display: block;
   margin: 20px;
-  background-color: rgba(128, 127, 133, 0.747);
-  height: 100%;
-  width: 100%;
-  padding: 24px;
+  background-image: url(/services-decoration.e7111aa2.jpg);
+  background-size: cover;
+  background-position: bottom;
 }
-.services .service-cards .title {
+.services .service-cards .service-card-2 {
+  max-width: 350px;
+  height: 300px;
+  display: block;
+  margin: 20px;
+  background-image: url(/services-floral-design.22b42daf.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.services .service-cards .service-card-3 {
+  max-width: 350px;
+  height: 300px;
+  display: block;
+  margin: 20px;
+  background-image: url(/service-events.d55d134a.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.services .service-cards .card-info {
+  background-color: rgba(52, 53, 51, 0.678);
+  padding: 24px;
+  height: 100%;
+}
+.services .title {
   font-size: 24px;
 }
-.services .service-cards p {
+.services p {
   padding: 15px 0;
 }
 
