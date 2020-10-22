@@ -117,6 +117,75 @@ header {
   width: 30px;
 }
 
+section .sect-info {
+  width: 100%;
+}
+section .sect-info .sm-flower {
+  height: 40px;
+  text-align: center;
+}
+section .sect-info .sm-flower img {
+  height: 30px;
+}
+section p {
+  padding: 10px 0;
+}
+
+.services {
+  background-image: url(/services-cropped.1f77568d.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+.services .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.services .service-cards .service-card-1 {
+  max-width: 350px;
+  height: 300px;
+  display: block;
+  margin: 20px;
+  background-image: url(/services-decoration.e7111aa2.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.services .service-cards .service-card-2 {
+  max-width: 350px;
+  height: 300px;
+  display: block;
+  margin: 20px;
+  background-image: url(/services-floral-design.22b42daf.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.services .service-cards .service-card-3 {
+  max-width: 350px;
+  height: 300px;
+  display: block;
+  margin: 20px;
+  background-image: url(/service-events.d55d134a.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.services .service-cards .card-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(52, 53, 51, 0.678);
+  padding: 24px;
+  height: 100%;
+}
+.services .title {
+  font-size: 24px;
+}
+
 @media only screen and (max-width: 960px) {
   .main-header,
 section {
@@ -174,69 +243,34 @@ section {
     margin: 0 2px;
   }
 }
-section .sect-info {
-  width: 100%;
-}
-section .sect-info .sm-flower {
-  height: 40px;
-  text-align: center;
-}
-section .sect-info .sm-flower img {
-  height: 30px;
-}
-
-.services {
-  background-image: url(/services-cropped.1f77568d.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: auto;
-}
-.services .service-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-.services .service-cards .service-card-1 {
-  max-width: 350px;
-  height: 300px;
-  display: block;
-  margin: 20px;
-  background-image: url(/services-decoration.e7111aa2.jpg);
-  background-size: cover;
-  background-position: bottom;
-}
-.services .service-cards .service-card-2 {
-  max-width: 350px;
-  height: 300px;
-  display: block;
-  margin: 20px;
-  background-image: url(/services-floral-design.22b42daf.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.services .service-cards .service-card-3 {
-  max-width: 350px;
-  height: 300px;
-  display: block;
-  margin: 20px;
-  background-image: url(/service-events.d55d134a.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.services .service-cards .card-info {
-  background-color: rgba(52, 53, 51, 0.678);
-  padding: 24px;
-  height: 100%;
-}
-.services .title {
-  font-size: 24px;
-}
-.services p {
-  padding: 15px 0;
+@media only screen and (max-width: 820px) {
+  .services .service-cards {
+    display: block;
+  }
+  .services .service-cards .service-card-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0 10px 0;
+  }
+  .services .service-cards .service-card-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0 10px 0;
+  }
+  .services .service-cards .service-card-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0 10px 0;
+  }
 }
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
