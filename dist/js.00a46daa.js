@@ -189,12 +189,51 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\img\\banner-background.jpg":[["banner-background.7df10ede.jpg","resources/img/banner-background.jpg"],"resources/img/banner-background.jpg"],"./..\\img\\services-cropped.jpg":[["services-cropped.1f77568d.jpg","resources/img/services-cropped.jpg"],"resources/img/services-cropped.jpg"],"./..\\img\\services-decoration.jpg":[["services-decoration.e7111aa2.jpg","resources/img/services-decoration.jpg"],"resources/img/services-decoration.jpg"],"./..\\img\\services-floral-design.jpg":[["services-floral-design.22b42daf.jpg","resources/img/services-floral-design.jpg"],"resources/img/services-floral-design.jpg"],"./..\\img\\service-events.jpg":[["service-events.d55d134a.jpg","resources/img/service-events.jpg"],"resources/img/service-events.jpg"],"./..\\img\\events-wedding.jpg":[["events-wedding.4652ce29.jpg","resources/img/events-wedding.jpg"],"resources/img/events-wedding.jpg"],"./..\\img\\events-corp.jpg":[["events-corp.980bb667.jpg","resources/img/events-corp.jpg"],"resources/img/events-corp.jpg"],"./..\\img\\events-funeral.jpg":[["events-funeral.6a543072.jpg","resources/img/events-funeral.jpg"],"resources/img/events-funeral.jpg"],"./..\\img\\events-hotels.jpg":[["events-hotels.44c7bb43.jpg","resources/img/events-hotels.jpg"],"resources/img/events-hotels.jpg"],"./..\\img\\events-parties.jpg":[["events-parties.070f41f4.jpg","resources/img/events-parties.jpg"],"resources/img/events-parties.jpg"],"./..\\img\\events-media.jpg":[["events-media.583d84c5.jpg","resources/img/events-media.jpg"],"resources/img/events-media.jpg"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+},{"./..\\img\\banner-background.jpg":[["banner-background.7df10ede.jpg","resources/img/banner-background.jpg"],"resources/img/banner-background.jpg"],"./..\\img\\services-cropped.jpg":[["services-cropped.1f77568d.jpg","resources/img/services-cropped.jpg"],"resources/img/services-cropped.jpg"],"./..\\img\\services-decoration.jpg":[["services-decoration.e7111aa2.jpg","resources/img/services-decoration.jpg"],"resources/img/services-decoration.jpg"],"./..\\img\\services-floral-design.jpg":[["services-floral-design.22b42daf.jpg","resources/img/services-floral-design.jpg"],"resources/img/services-floral-design.jpg"],"./..\\img\\service-events.jpg":[["service-events.d55d134a.jpg","resources/img/service-events.jpg"],"resources/img/service-events.jpg"],"./..\\img\\events-wedding.jpg":[["events-wedding.4652ce29.jpg","resources/img/events-wedding.jpg"],"resources/img/events-wedding.jpg"],"./..\\img\\events-corp.jpg":[["events-corp.980bb667.jpg","resources/img/events-corp.jpg"],"resources/img/events-corp.jpg"],"./..\\img\\events-funeral.jpg":[["events-funeral.6a543072.jpg","resources/img/events-funeral.jpg"],"resources/img/events-funeral.jpg"],"./..\\img\\events-hotels.jpg":[["events-hotels.44c7bb43.jpg","resources/img/events-hotels.jpg"],"resources/img/events-hotels.jpg"],"./..\\img\\events-parties.jpg":[["events-parties.070f41f4.jpg","resources/img/events-parties.jpg"],"resources/img/events-parties.jpg"],"./..\\img\\events-media.jpg":[["events-media.583d84c5.jpg","resources/img/events-media.jpg"],"resources/img/events-media.jpg"],"./..\\img\\portfolio-background.png":[["portfolio-background.72a30760.png","resources/img/portfolio-background.png"],"resources/img/portfolio-background.png"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
 "use strict";
 
 require("../resources/sass/main");
 
 console.log("Hello");
+var slideIndex = 1;
+showSlides(slideIndex); // Next/previous controls
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+} // Thumbnail image controls
+
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+window.currentSlide = currentSlide;
+window.plusSlides = plusSlides;
 },{"../resources/sass/main":"resources/sass/main.scss"}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -223,7 +262,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49970" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54760" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -266,6 +266,106 @@ section p {
   font-size: 32px;
 }
 
+.portfolio {
+  background-image: url(/portfolio-background.72a30760.png);
+}
+.portfolio .slideshow-container {
+  display: block;
+}
+
+/* Slideshow container */
+.portfolio {
+  /* Hide the images by default */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+}
+.portfolio .slideshow-container {
+  max-width: 900px;
+  position: relative;
+  margin: 10px auto;
+}
+.portfolio .mySlides {
+  display: none;
+}
+.portfolio .mySlides img {
+  max-width: 1000px;
+  max-height: 500px;
+  object-fit: contain;
+  text-align: center;
+}
+.portfolio .prev,
+.portfolio .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgba(226, 148, 178, 0.849);
+  font-weight: bold;
+  font-size: 26px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.portfolio .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.portfolio .prev:hover,
+.portfolio .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.portfolio .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.portfolio .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.portfolio .active,
+.portfolio .dot:hover {
+  background-color: rgba(226, 148, 178, 0.849);
+}
+.portfolio .fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 1151px) {
   .services .service-cards .service-card-1 {
     max-width: 45%;
