@@ -37,6 +37,18 @@ body {
   font-size: 18px;
 }
 
+.light-title {
+  font-family: "Vidaloka", serif;
+  color: #f7f3f0;
+  font-size: 6.7vw;
+}
+
+.light-para {
+  font-family: "Raleway", sans-serif;
+  color: #f7f3f0;
+  font-size: 18px;
+}
+
 .title-head,
 .para {
   text-align: center;
@@ -366,6 +378,39 @@ section p {
   }
 }
 
+.order-background {
+  background-image: url(/order-background.48fdd918.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+}
+.order-background section {
+  padding: 40px 0;
+}
+.order-background .order-banner {
+  background-color: rgba(131, 100, 71, 0.856);
+  width: 100%;
+  height: auto;
+}
+.order-background .order-banner .para {
+  margin-top: 20px;
+}
+.order-background .order-banner .para a {
+  background-color: #e294c1;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.order-background .order-banner .para a span {
+  font-size: 16px;
+}
+.order-background .order-banner .title {
+  font-size: 32px;
+}
+
 @media only screen and (max-width: 1151px) {
   .services .service-cards .service-card-1 {
     max-width: 45%;
@@ -509,12 +554,14 @@ section {
   }
 }
 @media only screen and (min-width: 630px) {
-  .dark-title {
+  .dark-title,
+.light-title {
     font-size: 42px;
   }
 }
 @media only screen and (max-width: 360px) {
-  .dark-title {
+  .dark-title,
+.light-title {
     font-size: 24px;
   }
 }
