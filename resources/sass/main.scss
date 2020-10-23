@@ -2,10 +2,10 @@
 
 body {
   height: 100%;
-  // background: rgb(251, 117, 172);
   background-color: rgba(245, 241, 241, 1);
-  // background: linear-gradient(90deg, rgba(225, 147, 177, 0.849) 4%, rgba(245, 241, 241, 1) 4%);
   line-height: 1.5;
+  min-width: 300px;
+  font-weight: 500;
 }
 
 .wrapper {
@@ -51,6 +51,7 @@ section {
 }
 
 // End of Global //
+
 // Specific Starts//
 
 //HEADER
@@ -159,7 +160,6 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
   width: 100%;
   height: auto;
 
@@ -171,30 +171,30 @@ section {
     align-items: center;
 
     .service-card-1 {
-      max-width: 350px;
+      max-width: 30%;
+      min-width: 300px;
       height: 300px;
-      display: block;
-      margin: 20px;
+      margin: 10px;
       background-image: url(../img/services-decoration.jpg);
       background-size: cover;
       background-position: bottom;
     }
 
     .service-card-2 {
-      max-width: 350px;
+      max-width: 30%;
+      min-width: 300px;
       height: 300px;
-      display: block;
-      margin: 20px;
+      margin: 10px;
       background-image: url(../img/services-floral-design.jpg);
       background-size: cover;
       background-position: center;
     }
 
     .service-card-3 {
-      max-width: 350px;
+      max-width: 30%;
+      min-width: 300px;
       height: 300px;
-      display: block;
-      margin: 20px;
+      margin: 10px;
       background-image: url(../img/service-events.jpg);
       background-size: cover;
       background-position: center;
@@ -212,11 +212,136 @@ section {
   }
 
   .title {
-    font-size: 24px;
+    font-size: 32px;
+  }
+}
+
+.events {
+  width: 100%;
+  height: auto;
+
+  .event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    .event-card-1 {
+      width: 30%;
+      min-width: 300px;
+      height: 150px;
+      margin: 10px;
+      background-image: url(../img/events-wedding.jpg);
+      background-size: cover;
+      background-position: bottom;
+    }
+
+    .event-card-2 {
+      width: 30%;
+      min-width: 300px;
+      height: 150px;
+      margin: 10px;
+      background-image: url(../img/events-corp.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .event-card-3 {
+      width: 30%;
+      min-width: 300px;
+      height: 150px;
+      margin: 10px;
+      background-image: url(../img/events-funeral.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .event-card-4 {
+      width: 30%;
+      min-width: 300px;
+      height: 150px;
+      margin: 10px;
+      background-image: url(../img/events-hotels.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .event-card-5 {
+      width: 30%;
+      min-width: 300px;
+      height: 150px;
+      margin: 10px;
+      background-image: url(../img/events-parties.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .event-card-6 {
+      width: 30%;
+      min-width: 300px;
+      height: 150px;
+      margin: 10px;
+      background-image: url(../img/events-media.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .card-info {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(226, 148, 178, 0.849);
+      padding: 24px;
+      height: 100%;
+    }
+  }
+
+  .title {
+    font-size: 32px;
   }
 }
 
 // MEDIA//
+
+@media only screen and (max-width: 1151px) {
+  .services {
+    .service-cards {
+      .service-card-1 {
+        max-width: 45%;
+      }
+      .service-card-2 {
+        max-width: 45%;
+      }
+      .service-card-3 {
+        max-width: 45%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .events {
+    .event-cards {
+      .event-card-1 {
+        width: 45%;
+      }
+      .event-card-2 {
+        width: 45%;
+      }
+      .event-card-3 {
+        width: 45%;
+      }
+      .event-card-4 {
+        width: 45%;
+      }
+      .event-card-5 {
+        width: 45%;
+      }
+      .event-card-6 {
+        width: 45%;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 960px) {
   //  HEADER//
@@ -224,17 +349,61 @@ section {
   section {
     padding: 30px 20px;
   }
-}
-
-@media only screen and (min-width: 630px) {
-  .dark-title {
-    font-size: 42px;
+  .card-info {
+    .title {
+      font-size: 26px;
+    }
   }
 }
 
-@media only screen and (max-width: 360px) {
-  .dark-title {
-    font-size: 24px;
+@media only screen and (max-width: 840px) {
+  .services {
+    .service-cards {
+      .service-card-1 {
+        max-width: 100%;
+      }
+      .service-card-2 {
+        max-width: 100%;
+      }
+      .service-card-3 {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .services {
+    .service-cards {
+      display: block;
+
+      .service-card-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 20px 0 10px 0;
+      }
+
+      .service-card-2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 20px 0 10px 0;
+      }
+
+      .service-card-3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        margin: 20px 0 10px 0;
+      }
+    }
   }
 }
 
@@ -281,6 +450,43 @@ section {
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .events {
+    .event-cards {
+      .event-card-1 {
+        width: 100%;
+      }
+      .event-card-2 {
+        width: 100%;
+      }
+      .event-card-3 {
+        width: 100%;
+      }
+      .event-card-4 {
+        width: 100%;
+      }
+      .event-card-5 {
+        width: 100%;
+      }
+      .event-card-6 {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 630px) {
+  .dark-title {
+    font-size: 42px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .dark-title {
+    font-size: 24px;
   }
 }
 
@@ -333,38 +539,3 @@ section {
 //     }
 //   }
 // }
-
-@media only screen and (max-width: 820px) {
-  .services {
-    .service-cards {
-      display: block;
-
-      .service-card-1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        margin: 20px 0 10px 0;
-      }
-
-      .service-card-2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        margin: 20px 0 10px 0;
-      }
-
-      .service-card-3 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        margin: 20px 0 10px 0;
-      }
-    }
-  }
-}

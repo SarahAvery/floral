@@ -2,6 +2,8 @@ body {
   height: 100%;
   background-color: #f5f1f1;
   line-height: 1.5;
+  min-width: 300px;
+  font-weight: 500;
 }
 
 .wrapper {
@@ -147,28 +149,28 @@ section p {
   align-items: center;
 }
 .services .service-cards .service-card-1 {
-  max-width: 350px;
+  max-width: 30%;
+  min-width: 300px;
   height: 300px;
-  display: block;
-  margin: 20px;
+  margin: 10px;
   background-image: url(/services-decoration.e7111aa2.jpg);
   background-size: cover;
   background-position: bottom;
 }
 .services .service-cards .service-card-2 {
-  max-width: 350px;
+  max-width: 30%;
+  min-width: 300px;
   height: 300px;
-  display: block;
-  margin: 20px;
+  margin: 10px;
   background-image: url(/services-floral-design.22b42daf.jpg);
   background-size: cover;
   background-position: center;
 }
 .services .service-cards .service-card-3 {
-  max-width: 350px;
+  max-width: 30%;
+  min-width: 300px;
   height: 300px;
-  display: block;
-  margin: 20px;
+  margin: 10px;
   background-image: url(/service-events.d55d134a.jpg);
   background-size: cover;
   background-position: center;
@@ -183,23 +185,166 @@ section p {
   height: 100%;
 }
 .services .title {
-  font-size: 24px;
+  font-size: 32px;
 }
 
+.events {
+  width: 100%;
+  height: auto;
+}
+.events .event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.events .event-cards .event-card-1 {
+  width: 30%;
+  min-width: 300px;
+  height: 150px;
+  margin: 10px;
+  background-image: url(/events-wedding.4652ce29.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.events .event-cards .event-card-2 {
+  width: 30%;
+  min-width: 300px;
+  height: 150px;
+  margin: 10px;
+  background-image: url(/events-corp.980bb667.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.events .event-cards .event-card-3 {
+  width: 30%;
+  min-width: 300px;
+  height: 150px;
+  margin: 10px;
+  background-image: url(/events-funeral.6a543072.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.events .event-cards .event-card-4 {
+  width: 30%;
+  min-width: 300px;
+  height: 150px;
+  margin: 10px;
+  background-image: url(/events-hotels.44c7bb43.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.events .event-cards .event-card-5 {
+  width: 30%;
+  min-width: 300px;
+  height: 150px;
+  margin: 10px;
+  background-image: url(/events-parties.070f41f4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.events .event-cards .event-card-6 {
+  width: 30%;
+  min-width: 300px;
+  height: 150px;
+  margin: 10px;
+  background-image: url(/events-media.583d84c5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.events .event-cards .card-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(226, 148, 178, 0.849);
+  padding: 24px;
+  height: 100%;
+}
+.events .title {
+  font-size: 32px;
+}
+
+@media only screen and (max-width: 1151px) {
+  .services .service-cards .service-card-1 {
+    max-width: 45%;
+  }
+  .services .service-cards .service-card-2 {
+    max-width: 45%;
+  }
+  .services .service-cards .service-card-3 {
+    max-width: 45%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .events .event-cards .event-card-1 {
+    width: 45%;
+  }
+  .events .event-cards .event-card-2 {
+    width: 45%;
+  }
+  .events .event-cards .event-card-3 {
+    width: 45%;
+  }
+  .events .event-cards .event-card-4 {
+    width: 45%;
+  }
+  .events .event-cards .event-card-5 {
+    width: 45%;
+  }
+  .events .event-cards .event-card-6 {
+    width: 45%;
+  }
+}
 @media only screen and (max-width: 960px) {
   .main-header,
 section {
     padding: 30px 20px;
   }
-}
-@media only screen and (min-width: 630px) {
-  .dark-title {
-    font-size: 42px;
+
+  .card-info .title {
+    font-size: 26px;
   }
 }
-@media only screen and (max-width: 360px) {
-  .dark-title {
-    font-size: 24px;
+@media only screen and (max-width: 840px) {
+  .services .service-cards .service-card-1 {
+    max-width: 100%;
+  }
+  .services .service-cards .service-card-2 {
+    max-width: 100%;
+  }
+  .services .service-cards .service-card-3 {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 820px) {
+  .services .service-cards {
+    display: block;
+  }
+  .services .service-cards .service-card-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0 10px 0;
+  }
+  .services .service-cards .service-card-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0 10px 0;
+  }
+  .services .service-cards .service-card-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 20px 0 10px 0;
   }
 }
 @media only screen and (min-width: 801px) {
@@ -243,33 +388,34 @@ section {
     margin: 0 2px;
   }
 }
-@media only screen and (max-width: 820px) {
-  .services .service-cards {
-    display: block;
+@media only screen and (max-width: 780px) {
+  .events .event-cards .event-card-1 {
+    width: 100%;
   }
-  .services .service-cards .service-card-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin: 20px 0 10px 0;
+  .events .event-cards .event-card-2 {
+    width: 100%;
   }
-  .services .service-cards .service-card-2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin: 20px 0 10px 0;
+  .events .event-cards .event-card-3 {
+    width: 100%;
   }
-  .services .service-cards .service-card-3 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    margin: 20px 0 10px 0;
+  .events .event-cards .event-card-4 {
+    width: 100%;
+  }
+  .events .event-cards .event-card-5 {
+    width: 100%;
+  }
+  .events .event-cards .event-card-6 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .dark-title {
+    font-size: 42px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .dark-title {
+    font-size: 24px;
   }
 }
 
