@@ -411,6 +411,46 @@ section p {
   font-size: 32px;
 }
 
+.flowers {
+  width: 100%;
+  height: auto;
+}
+.flowers .flower-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+}
+.flowers .flower-cards .card-info p {
+  padding: 5px;
+}
+.flowers .flower-cards .title {
+  font-size: 30px;
+}
+.flowers .flower-cards .flower-card {
+  max-width: 23%;
+  height: 350px;
+  margin: 10px;
+}
+.flowers .flower-cards .flower-card img {
+  height: 60%;
+  width: 100%;
+  object-fit: center;
+}
+.flowers .flower-cards .flower-card .order-btn {
+  margin-top: 10px;
+}
+.flowers .flower-cards .flower-card .order-btn a {
+  text-decoration: none;
+  background-color: rgba(226, 148, 178, 0.849);
+  border-radius: 50px;
+  padding: 5px;
+}
+.flowers .flower-cards .flower-card .order-btn a .light-para {
+  font-size: 16px;
+}
+
 @media only screen and (max-width: 1151px) {
   .services .service-cards .service-card-1 {
     max-width: 45%;
@@ -440,6 +480,18 @@ section p {
   }
   .events .event-cards .event-card-6 {
     width: 45%;
+  }
+}
+@media only screen and (max-width: 1135px) {
+  .flowers .flower-cards .flower-card {
+    height: 400px;
+    max-width: 45%;
+  }
+  .flowers .flower-cards .flower-card img {
+    height: 65%;
+  }
+  .flowers .flower-cards .title {
+    font-size: 26px;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -551,6 +603,18 @@ section {
   }
   .events .event-cards .event-card-6 {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .flowers .flower-cards .flower-card {
+    height: 400px;
+    max-width: 100%;
+  }
+  .flowers .flower-cards .flower-card img {
+    height: 65%;
+  }
+  .flowers .flower-cards .title {
+    font-size: 22px;
   }
 }
 @media only screen and (min-width: 630px) {

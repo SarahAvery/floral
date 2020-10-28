@@ -463,6 +463,55 @@ section {
   }
 }
 
+.flowers {
+  width: 100%;
+  height: auto;
+
+  .flower-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+
+    .card-info {
+      p {
+        padding: 5px;
+      }
+    }
+
+    .title {
+      font-size: 30px;
+    }
+
+    .flower-card {
+      max-width: 23%;
+      height: 350px;
+      margin: 10px;
+
+      img {
+        height: 60%;
+        width: 100%;
+        object-fit: center;
+      }
+
+      .order-btn {
+        margin-top: 10px;
+        a {
+          text-decoration: none;
+          background-color: rgba(226, 148, 178, 0.849);
+          border-radius: 50px;
+          padding: 5px;
+
+          .light-para {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // MEDIA//
 
 @media only screen and (max-width: 1151px) {
@@ -501,6 +550,24 @@ section {
       }
       .event-card-6 {
         width: 45%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1135px) {
+  .flowers {
+    .flower-cards {
+      .flower-card {
+        height: 400px;
+        max-width: 45%;
+
+        img {
+          height: 65%;
+        }
+      }
+      .title {
+        font-size: 26px;
       }
     }
   }
@@ -636,6 +703,24 @@ section {
       }
       .event-card-6 {
         width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .flowers {
+    .flower-cards {
+      .flower-card {
+        height: 400px;
+        max-width: 100%;
+
+        img {
+          height: 65%;
+        }
+      }
+      .title {
+        font-size: 22px;
       }
     }
   }
