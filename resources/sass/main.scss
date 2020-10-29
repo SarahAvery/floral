@@ -512,6 +512,62 @@ section {
   }
 }
 
+.special {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+
+  .flower-cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    .flower-card {
+      display: flex;
+      width: 100%;
+      max-height: 320px;
+      margin: 20px;
+
+      .card-info {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+        padding: 0 15px;
+
+        p {
+          padding: 0;
+        }
+      }
+
+      .title {
+        font-size: 30px;
+      }
+
+      img {
+        justify-content: flex-start;
+        width: 75%;
+        object-fit: center;
+      }
+
+      .order-btn {
+        margin-top: 10px;
+        margin-bottom: 5px;
+
+        a {
+          text-decoration: none;
+          background-color: rgba(226, 148, 178, 0.849);
+          border-radius: 50px;
+          padding: 5px;
+
+          .light-para {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
 // MEDIA//
 
 @media only screen and (max-width: 1151px) {
@@ -530,7 +586,41 @@ section {
   }
 }
 
+@media only screen and (max-width: 1135px) {
+  .flowers {
+    .flower-cards {
+      .flower-card {
+        height: 400px;
+        max-width: 45%;
+
+        img {
+          height: 65%;
+        }
+      }
+      .title {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .special {
+    .flower-cards {
+      .flower-card {
+        max-height: 408px;
+
+        .title {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1000px) {
+  section {
+    padding: 30px 15px;
+  }
+
   .events {
     .event-cards {
       .event-card-1 {
@@ -553,21 +643,30 @@ section {
       }
     }
   }
-}
 
-@media only screen and (max-width: 1135px) {
-  .flowers {
+  .special {
     .flower-cards {
       .flower-card {
-        height: 400px;
-        max-width: 45%;
+        width: 100%;
+        max-height: 600px;
+
+        .card-info {
+          text-align: left;
+          padding: 0 15px;
+
+          p {
+            padding: 8px;
+          }
+        }
+
+        .title {
+          font-size: 20px;
+        }
 
         img {
-          height: 65%;
+          width: 100%;
+          height: 290px;
         }
-      }
-      .title {
-        font-size: 26px;
       }
     }
   }
@@ -587,6 +686,10 @@ section {
 }
 
 @media only screen and (max-width: 840px) {
+  section {
+    padding: 30px 10px;
+  }
+
   .services {
     .service-cards {
       .service-card-1 {
@@ -632,6 +735,22 @@ section {
         align-items: center;
         max-width: 100%;
         margin: 20px 0 10px 0;
+      }
+    }
+  }
+
+  .special {
+    .flower-cards {
+      .flower-card {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        max-height: 600px;
+
+        img {
+          width: 100%;
+          height: 200px;
+        }
       }
     }
   }
@@ -733,6 +852,24 @@ section {
   }
 }
 
+@media only screen and (max-width: 380px) {
+  .special {
+    .flower-cards {
+      .flower-card {
+        max-height: 800px;
+        .order-btn {
+          margin: 0 auto;
+          margin-bottom: 5px;
+
+          a {
+            padding: 5px 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 360px) {
   .dark-title,
   .light-title {
@@ -740,7 +877,7 @@ section {
   }
 }
 
-//TABLET//
+// TABLET//
 
 // @media only screen and (max-width: 800px) {
 //   //HEADER//
@@ -788,4 +925,3 @@ section {
 //       }
 //     }
 //   }
-// }
