@@ -507,6 +507,38 @@ section p {
   font-size: 16px;
 }
 
+.additional {
+  width: 100%;
+  height: auto;
+  background-image: url(/portfolio-background.72a30760.png);
+}
+.additional .event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.additional .event-cards .card-info {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(226, 148, 178, 0.849);
+  width: 30%;
+  min-width: 300px;
+  height: 100px;
+  margin: 10px;
+}
+.additional .event-cards .card-info a {
+  text-decoration: none;
+  padding: 20px;
+}
+.additional .title {
+  font-size: 32px;
+}
+
 @media only screen and (max-width: 1151px) {
   .services .service-cards .service-card-1 {
     max-width: 45%;
@@ -719,6 +751,21 @@ section {
   }
   .flowers .flower-cards .title {
     font-size: 22px;
+  }
+}
+@media only screen and (max-width: 660px) {
+  .additional .event-cards {
+    margin-top: 10px;
+  }
+  .additional .event-cards .card-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(226, 148, 178, 0.849);
+    width: 100%;
+    height: 80px;
+    margin: 10px;
   }
 }
 @media only screen and (min-width: 630px) {
