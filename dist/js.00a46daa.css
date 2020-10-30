@@ -456,6 +456,15 @@ section p {
   width: 100%;
   height: auto;
 }
+.special .sect-info .title-head,
+.special .sect-info .para,
+.special .sect-info .sm-flower {
+  text-align: left;
+  padding: 0 20px;
+}
+.special .sect-info .para {
+  margin-bottom: 20px;
+}
 .special .flower-cards {
   display: flex;
   flex-wrap: wrap;
@@ -464,7 +473,7 @@ section p {
   display: flex;
   width: 100%;
   max-height: 320px;
-  margin: 20px;
+  margin-bottom: 30px;
 }
 .special .flower-cards .flower-card .card-info {
   display: flex;
@@ -482,7 +491,7 @@ section p {
 .special .flower-cards .flower-card img {
   justify-content: flex-start;
   width: 75%;
-  object-fit: center;
+  object-fit: cover;
 }
 .special .flower-cards .flower-card .order-btn {
   margin-top: 10px;
@@ -528,6 +537,28 @@ section p {
     font-size: 28px;
   }
 }
+@media only screen and (max-width: 1015px) {
+  .special .flower-cards .flower-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-height: 600px;
+  }
+  .special .flower-cards .flower-card .card-info {
+    text-align: left;
+    padding: 0 15px;
+  }
+  .special .flower-cards .flower-card .card-info p {
+    padding: 8px;
+  }
+  .special .flower-cards .flower-card .title {
+    font-size: 20px;
+  }
+  .special .flower-cards .flower-card img {
+    width: 100%;
+    height: 290px;
+  }
+}
 @media only screen and (max-width: 1000px) {
   section {
     padding: 30px 15px;
@@ -550,25 +581,6 @@ section p {
   }
   .events .event-cards .event-card-6 {
     width: 45%;
-  }
-
-  .special .flower-cards .flower-card {
-    width: 100%;
-    max-height: 600px;
-  }
-  .special .flower-cards .flower-card .card-info {
-    text-align: left;
-    padding: 0 15px;
-  }
-  .special .flower-cards .flower-card .card-info p {
-    padding: 8px;
-  }
-  .special .flower-cards .flower-card .title {
-    font-size: 20px;
-  }
-  .special .flower-cards .flower-card img {
-    width: 100%;
-    height: 290px;
   }
 }
 @media only screen and (max-width: 960px) {
