@@ -622,6 +622,77 @@ section {
   }
 }
 
+.sub-background {
+  background-image: url(../img/subscribe-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+
+  .sub-banner {
+    background-color: rgba(97, 96, 95, 0.719);
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+
+    .wrapper {
+      display: block;
+    }
+
+    .sect-info {
+      width: 100%;
+      padding: 0 15px;
+
+      .title {
+        font-size: 30px;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+    .form {
+      padding: 0 15px;
+      form {
+        display: flex;
+        margin: 10px auto;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 180px;
+        background-color: rgb(240, 231, 231);
+        align-items: center;
+        border-radius: 20px;
+
+        input[type="email"],
+        input[type="submit"] {
+          margin: 5px auto;
+          width: 90%;
+          height: 40px;
+          text-decoration: none;
+          border-radius: 50px;
+          border: none;
+        }
+
+        input[type="email"] {
+          text-align: left;
+          padding-left: 10px;
+          background-color: rgba(214, 211, 212, 0.849);
+        }
+
+        input[type="submit"] {
+          text-align: center;
+          background-color: rgba(226, 148, 178, 0.849);
+          font-family: "Raleway", sans-serif;
+          color: #f7f3f0;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
 footer {
   .wrapper {
     display: block;
@@ -695,6 +766,13 @@ footer {
     align-items: center;
     height: 68px;
     padding: 0 20px;
+
+    .cpyrt,
+    .rights {
+      span {
+        font-size: 14px;
+      }
+    }
 
     svg {
       fill: rgba(226, 148, 178, 0.849);
@@ -936,6 +1014,10 @@ footer {
         }
       }
     }
+    .license {
+      display: block;
+      text-align: center;
+    }
   }
 }
 
@@ -1010,6 +1092,43 @@ footer {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .sub-background {
+    .sub-banner {
+      padding: 90px 0;
+      .wrapper {
+        display: flex;
+        align-items: center;
+      }
+
+      .sect-info {
+        width: 70%;
+        height: auto;
+        justify-content: space-evenly;
+
+        .title {
+          font-size: 42px;
+        }
+      }
+
+      .form {
+        form {
+          display: flex;
+          margin: 10px 15px;
+          flex-wrap: wrap;
+          min-height: 200px;
+          width: auto;
+
+          input[type="email"],
+          input[type="submit"] {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 760px) {
   .flowers {
     .flower-cards {
@@ -1076,6 +1195,16 @@ footer {
   .dark-title,
   .light-title {
     font-size: 24px;
+  }
+
+  .sub-background {
+    .sub-banner {
+      .sect-info {
+        .title {
+          font-size: 26px;
+        }
+      }
+    }
   }
 }
 
