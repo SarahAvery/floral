@@ -166,6 +166,7 @@ header {
 
 section .sect-info {
   width: 100%;
+  height: auto;
 }
 section .sect-info .sm-flower {
   height: 40px;
@@ -612,16 +613,16 @@ section p {
 }
 
 .testimonials {
-  /* Hide the images by default */
+  width: 100%;
+  height: auto;
 }
 .testimonials .cards {
-  display: block;
   width: 100%;
-  max-height: 600px;
   margin: 10px auto;
   display: flex;
+  justify-content: center;
 }
-.testimonials .card {
+.testimonials .cards .card {
   display: flex;
   flex-direction: column;
   margin: 0 10px;
@@ -630,16 +631,15 @@ section p {
   border-radius: 30px;
   padding: 0 10px;
 }
-.testimonials .card p {
+.testimonials .cards .card p {
   max-width: 500px;
-  max-height: 500px;
   text-align: center;
   margin: 0 auto;
 }
-.testimonials .card p .dark-title {
+.testimonials .cards .card p .dark-title {
   font-size: 22px;
 }
-.testimonials .card p .date {
+.testimonials .cards .card p .date {
   font-size: 12px;
 }
 
@@ -1080,6 +1080,28 @@ section {
   .flowers .flower-cards .title {
     font-size: 22px;
   }
+
+  .testimonials .cards {
+    flex-wrap: wrap;
+  }
+  .testimonials .cards .card {
+    max-width: 45%;
+    max-height: 300px;
+    margin: 10px;
+    flex-wrap: nowrap;
+  }
+  .testimonials .cards .card p {
+    max-height: 500px;
+  }
+  .testimonials .cards .card p .dark-title {
+    font-size: 20px;
+  }
+  .testimonials .cards .card p .dark-para {
+    font-size: 16px;
+  }
+  .testimonials .cards .card p .date {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 660px) {
   .additional .event-cards {
@@ -1094,6 +1116,14 @@ section {
     width: 100%;
     height: 80px;
     margin: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .testimonials .cards {
+    flex-wrap: wrap;
+  }
+  .testimonials .cards .card {
+    max-width: 100%;
   }
 }
 @media only screen and (min-width: 630px) {
