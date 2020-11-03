@@ -55,6 +55,39 @@ body {
   width: 100%;
 }
 
+form input[type=email],
+form input[type=submit],
+form input[type=phone],
+form input[type=text],
+form textarea {
+  margin: 8px auto;
+  width: 90%;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 50px;
+  border: none;
+  padding-left: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+form input[type=email] {
+  text-align: left;
+  padding-left: 10px;
+  background-color: rgba(214, 211, 212, 0.849);
+}
+form input[type=submit] {
+  text-align: center;
+  background-color: rgba(226, 148, 178, 0.849);
+  color: #f7f3f0;
+  padding-left: 0px;
+  font-size: 16px;
+}
+form textarea {
+  padding-top: 5px;
+  border-radius: 20px;
+  height: auto;
+}
+
 .main-header,
 section {
   padding: 105px 20px;
@@ -583,26 +616,70 @@ section p {
   align-items: center;
   border-radius: 20px;
 }
-.sub-background .sub-banner .form form input[type=email],
-.sub-background .sub-banner .form form input[type=submit] {
-  margin: 5px auto;
-  width: 90%;
-  height: 40px;
-  text-decoration: none;
-  border-radius: 50px;
-  border: none;
+
+.contact-background {
+  background-image: url(/banner-background.7df10ede.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
 }
-.sub-background .sub-banner .form form input[type=email] {
+.contact-background .contact {
+  background-color: rgba(97, 96, 95, 0.719);
+  width: 100%;
+  height: auto;
+  padding: 30px 0;
+}
+.contact-background .contact .wrapper {
+  flex-wrap: wrap;
+}
+.contact-background .contact .sect-info {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+}
+.contact-background .contact .sect-info .title {
+  font-size: 30px;
+}
+.contact-background .contact .sect-info .contact-wrapper {
+  margin: 15px 0;
+}
+.contact-background .contact .sect-info .contact-wrapper .para-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.contact-background .contact .sect-info p {
   text-align: left;
-  padding-left: 10px;
-  background-color: rgba(214, 211, 212, 0.849);
+  padding: 0;
 }
-.sub-background .sub-banner .form form input[type=submit] {
-  text-align: center;
-  background-color: rgba(226, 148, 178, 0.849);
-  font-family: "Raleway", sans-serif;
-  color: #f7f3f0;
-  font-size: 16px;
+.contact-background .contact .sect-info .map {
+  display: block;
+  height: 200px;
+  width: auto;
+  background-image: url(/map-grey.6eeb1abd.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 10px 0;
+}
+.contact-background .form {
+  display: block;
+  width: 100%;
+  padding: 0 15px;
+}
+.contact-background .form form {
+  display: flex;
+  margin: 10px auto;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  background-color: #f0e7e7;
+  align-items: center;
+  border-radius: 20px;
 }
 
 footer .wrapper {
@@ -934,6 +1011,9 @@ section {
   .sub-background .sub-banner .sect-info .title {
     font-size: 42px;
   }
+  .sub-background .sub-banner .form {
+    width: auto;
+  }
   .sub-background .sub-banner .form form {
     display: flex;
     margin: 10px 15px;
@@ -944,6 +1024,23 @@ section {
   .sub-background .sub-banner .form form input[type=email],
 .sub-background .sub-banner .form form input[type=submit] {
     width: 90%;
+  }
+
+  .contact-background .contact {
+    padding: 60px 0;
+  }
+  .contact-background .contact .wrapper {
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .contact-background .contact .sect-info .contact-info .contact-wrapper {
+    display: flex;
+  }
+  .contact-background .contact .sect-info .title {
+    font-size: 42px;
+  }
+  .contact-background .contact .form form {
+    min-height: 420px;
   }
 }
 @media only screen and (max-width: 760px) {
@@ -998,6 +1095,10 @@ section {
   }
 
   .sub-background .sub-banner .sect-info .title {
+    font-size: 26px;
+  }
+
+  .contact-background .contact .sect-info .title {
     font-size: 26px;
   }
 }
