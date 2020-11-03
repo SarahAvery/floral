@@ -317,13 +317,6 @@ section p {
 
 .portfolio {
   background-image: url(/portfolio-background.72a30760.png);
-}
-.portfolio .slideshow-container {
-  display: block;
-}
-
-/* Slideshow container */
-.portfolio {
   /* Hide the images by default */
   /* Next & previous buttons */
   /* Position the "next button" to the right */
@@ -333,6 +326,7 @@ section p {
   /* Fading animation */
 }
 .portfolio .slideshow-container {
+  display: block;
   max-width: 900px;
   position: relative;
   margin: 10px auto;
@@ -615,6 +609,38 @@ section p {
   background-color: #f0e7e7;
   align-items: center;
   border-radius: 20px;
+}
+
+.testimonials {
+  /* Hide the images by default */
+}
+.testimonials .cards {
+  display: block;
+  width: 100%;
+  max-height: 600px;
+  margin: 10px auto;
+  display: flex;
+}
+.testimonials .card {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px;
+  justify-content: space-between;
+  background-color: #f0e7e7;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+.testimonials .card p {
+  max-width: 500px;
+  max-height: 500px;
+  text-align: center;
+  margin: 0 auto;
+}
+.testimonials .card p .dark-title {
+  font-size: 22px;
+}
+.testimonials .card p .date {
+  font-size: 12px;
 }
 
 .contact-background {

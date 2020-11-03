@@ -360,13 +360,6 @@ section {
 
   .slideshow-container {
     display: block;
-  }
-}
-
-// SLIDE SHOW //
-/* Slideshow container */
-.portfolio {
-  .slideshow-container {
     max-width: 900px;
     position: relative;
     margin: 10px auto;
@@ -702,6 +695,42 @@ section {
         background-color: rgb(240, 231, 231);
         align-items: center;
         border-radius: 20px;
+      }
+    }
+  }
+}
+
+.testimonials {
+  .cards {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+    margin: 10px auto;
+    display: flex;
+  }
+
+  /* Hide the images by default */
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    justify-content: space-between;
+    background-color: rgb(240, 231, 231);
+    border-radius: 30px;
+    padding: 0 10px;
+
+    p {
+      max-width: 500px;
+      max-height: 500px;
+      text-align: center;
+      margin: 0 auto;
+
+      .dark-title {
+        font-size: 22px;
+      }
+
+      .date {
+        font-size: 12px;
       }
     }
   }
