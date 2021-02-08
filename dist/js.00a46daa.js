@@ -196,11 +196,16 @@ require("../resources/sass/main");
 
 console.log("Hello"); //Menu
 
-document.querySelector("#menu-btn").addEventListener("click", function () {
-  document.querySelector("#menu").classList.toggle("open");
+var menu = document.querySelector("#menu");
+var menuBtn = document.querySelector("#menu-btn");
+var mmButton = document.querySelector("#mm-button");
+menuBtn.addEventListener("click", function () {
+  menu.classList.toggle("open");
+  menu.style.transition = "ease in out, 2s";
 });
-document.querySelector("#mm-button").addEventListener("click", function () {
-  document.querySelector("#menu").classList.toggle("open");
+mmButton.addEventListener("click", function () {
+  menu.classList.toggle("open");
+  menu.style.transition = "ease in out, 2s";
 }); // PORTFOLIO SLIDE //
 
 var slideIndex = 1;
