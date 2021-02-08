@@ -1158,5 +1158,56 @@ section {
     font-size: 26px;
   }
 }
+@media only screen and (max-width: 800px) {
+  .menu,
+#menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #3d3c3c;
+    z-index: 10;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .menu.open,
+#menu.open {
+    display: flex;
+  }
+  .menu .header-info,
+#menu .header-info {
+    padding-top: 20px;
+  }
+  .menu .nav-mobile,
+#menu .nav-mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  .menu .nav-mobile a,
+#menu .nav-mobile a {
+    text-decoration: none;
+    list-style: none;
+  }
+  .menu .icons-mobile,
+#menu .icons-mobile {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+  }
+  .menu .icons-mobile svg,
+#menu .icons-mobile svg {
+    height: 30px;
+    width: 30px;
+    margin: 0 10px;
+    fill: rgba(226, 148, 178, 0.849);
+  }
+}
 
 /*# sourceMappingURL=/js.00a46daa.css.map */
