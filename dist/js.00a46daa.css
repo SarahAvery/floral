@@ -999,6 +999,10 @@ section {
     list-style: none;
     padding: 0 5px;
     margin: 0 2px;
+    transition: font-weight 0.5s ease-in-out;
+  }
+  .nav-desktop nav ul a:hover {
+    font-weight: bold;
   }
 }
 @media only screen and (max-width: 780px) {

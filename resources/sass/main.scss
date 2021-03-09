@@ -1177,6 +1177,11 @@ footer {
           list-style: none;
           padding: 0 5px;
           margin: 0 2px;
+          transition: font-weight 0.5s ease-in-out;
+        }
+
+        a:hover {
+          font-weight: bold;
         }
       }
     }
