@@ -1,4 +1,5 @@
 import "../resources/sass/main";
+import "../resources/css/main";
 
 console.log("Hello");
 
