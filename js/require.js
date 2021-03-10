@@ -60,6 +60,8 @@ window.plusSlides = plusSlides;*/
 
 "use strict";
 
+require("../resources/css/main");
+
 //import "../resources/sass/main";
 console.log("Hello"); //Menu
 
