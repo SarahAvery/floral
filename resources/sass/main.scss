@@ -107,6 +107,7 @@ section {
 //HEADER
 .icons {
   display: none;
+  text-decoration: none;
 }
 
 .nav-desktop {
@@ -866,6 +867,10 @@ footer {
           background-color: none;
           justify-content: flex-start;
 
+          a {
+            text-decoration: none;
+          }
+
           svg {
             height: 30px;
             width: 30px;
@@ -1119,6 +1124,7 @@ footer {
               height: 30px;
               width: 30px;
               margin: 5px;
+              text-decoration: none;
 
               svg {
                 height: 30px;

@@ -917,6 +917,7 @@ footer .license svg {
     height: 30px;
     width: 30px;
     margin: 5px;
+    text-decoration: none;
   }
   footer .footer-info .card .follow-us .icons a svg {
     height: 30px;
