@@ -1,4 +1,7 @@
 /*SCSS CONVERTED INTO CSS FOR GIT PAGES ONLY*/
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   height: 100%;
