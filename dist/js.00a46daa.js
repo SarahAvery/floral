@@ -117,70 +117,91 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/index.js":[function(require,module,exports) {
-//import "../resources/sass/main";
+})({"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-/*import "../resources/css/main";
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
 
-console.log("Hello");
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)\/[^/]+$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"resources/css/css-reset.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"resources/sass/main.scss":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"./..\\img\\banner-background.jpg":[["banner-background.7df10ede.jpg","resources/img/banner-background.jpg"],"resources/img/banner-background.jpg"],"./..\\img\\services-cropped.jpg":[["services-cropped.1f77568d.jpg","resources/img/services-cropped.jpg"],"resources/img/services-cropped.jpg"],"./..\\img\\services-decoration.jpg":[["services-decoration.e7111aa2.jpg","resources/img/services-decoration.jpg"],"resources/img/services-decoration.jpg"],"./..\\img\\services-floral-design.jpg":[["services-floral-design.22b42daf.jpg","resources/img/services-floral-design.jpg"],"resources/img/services-floral-design.jpg"],"./..\\img\\service-events.jpg":[["service-events.d55d134a.jpg","resources/img/service-events.jpg"],"resources/img/service-events.jpg"],"./..\\img\\events-wedding.jpg":[["events-wedding.4652ce29.jpg","resources/img/events-wedding.jpg"],"resources/img/events-wedding.jpg"],"./..\\img\\events-corp.jpg":[["events-corp.980bb667.jpg","resources/img/events-corp.jpg"],"resources/img/events-corp.jpg"],"./..\\img\\events-funeral.jpg":[["events-funeral.6a543072.jpg","resources/img/events-funeral.jpg"],"resources/img/events-funeral.jpg"],"./..\\img\\events-hotels.jpg":[["events-hotels.44c7bb43.jpg","resources/img/events-hotels.jpg"],"resources/img/events-hotels.jpg"],"./..\\img\\events-parties.jpg":[["events-parties.070f41f4.jpg","resources/img/events-parties.jpg"],"resources/img/events-parties.jpg"],"./..\\img\\events-media.jpg":[["events-media.583d84c5.jpg","resources/img/events-media.jpg"],"resources/img/events-media.jpg"],"./..\\img\\portfolio-background.png":[["portfolio-background.72a30760.png","resources/img/portfolio-background.png"],"resources/img/portfolio-background.png"],"./..\\img\\order-background.jpg":[["order-background.48fdd918.jpg","resources/img/order-background.jpg"],"resources/img/order-background.jpg"],"./..\\img\\subscribe-1.jpg":[["subscribe-1.ce96cf5d.jpg","resources/img/subscribe-1.jpg"],"resources/img/subscribe-1.jpg"],"./..\\img\\map-grey.png":[["map-grey.6eeb1abd.png","resources/img/map-grey.png"],"resources/img/map-grey.png"],"_css_loader":"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"js/index.js":[function(require,module,exports) {
+"use strict";
+
+require("../resources/css/css-reset.css");
+
+require("../resources/sass/main.scss");
 
 //Menu
-
-const menu = document.querySelector("#menu");
-const menuBtn = document.querySelector("#menu-btn");
-const mmButton = document.querySelector("#mm-button");
-
-menuBtn.addEventListener("click", () => {
-  menu.classList.toggle("open");
-  menu.style.transition = "ease in out, 2s";
-});
-
-mmButton.addEventListener("click", () => {
-  menu.classList.toggle("open");
-  menu.style.transition = "ease in out, 2s";
-});
-
-// PORTFOLIO SLIDE //
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
-}
-
-window.currentSlide = currentSlide;
-window.plusSlides = plusSlides;*/
-//ES5 FOR GITHUB PAGES ONLY//
-"use strict"; //import "../resources/sass/main";
-
-console.log("Hello"); //Menu
-
 var menu = document.querySelector("#menu");
 var menuBtn = document.querySelector("#menu-btn");
 var mmButton = document.querySelector("#mm-button");
@@ -232,7 +253,7 @@ function showSlides(n) {
 
 window.currentSlide = currentSlide;
 window.plusSlides = plusSlides;
-},{}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../resources/css/css-reset.css":"resources/css/css-reset.css","../resources/sass/main.scss":"resources/sass/main.scss"}],"../../../../AppData/Local/Yarn/Data/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -260,7 +281,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54262" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50283" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

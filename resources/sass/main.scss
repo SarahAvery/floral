@@ -61,6 +61,17 @@ body {
   width: 100%;
 }
 
+.visually-hidden {
+  background-color: #fff;
+  color: #000;
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 form {
   input[type="email"],
   input[type="submit"],
